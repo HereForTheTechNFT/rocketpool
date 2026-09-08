@@ -1,0 +1,9 @@
+# Chapitre 13 — Limites connues et perimetre de ce parcours
+
+Ce depot contient a la fois l'ancienne generation "minipool" (`contracts/contract/minipool/`, un contrat dedie par validateur) et la nouvelle generation "megapool" (`contracts/contract/megapool/`, un contrat par operateur portant plusieurs validateurs, introduite par la mise a niveau Saturn). Ce parcours documente principalement le megapool, la generation la plus recente ; le fonctionnement du minipool historique, bien que toujours present et actif sur le reseau au moment de l'ecriture, n'est pas detaille ici.
+
+Ce parcours ne couvre pas en detail le module de recompenses (`rewards/`, la logique complete de calcul des arbres Merkle de distribution), le DAO protocolaire plus large ouvert aux detenteurs de RPL (`dao/protocol/`, distinct du DAO des noeuds de confiance couvert au chapitre 11), ni les contrats `thirdparty/` et `types/` du depot. La verification des preuves d'etat Beacon Chain utilisees pour valider certaines transitions (sortie de validateur, contestation) n'est pas non plus detaillee.
+
+La licence du depot est GPL-3.0-only, une licence copyleft de la meme famille que celle de MakerDAO/dss (AGPL-3.0-or-later) mais sans l'extension explicite aux services reseau. Le code utilise deux versions de Solidity selon les fichiers (0.7.6 pour les contrats les plus anciens comme `RocketStorage.sol` et `RocketTokenRETH.sol`, 0.8.30 pour les contrats les plus recents comme `RocketDepositPool.sol` et `RocketMegapoolDelegate.sol`), signe d'une base de code evoluant par ajouts successifs plutot que reecrite d'un bloc.
+
+Rien n'a ete installe, compile, deploye ni execute pour ecrire ces chapitres. Aucun test n'a ete lance ; ces chapitres decrivent ce que le code Solidity dit faire, en renvoyant aux fichiers cites. Le depot fournit sa propre suite de tests (dossier `test/`) pour verification independante.
