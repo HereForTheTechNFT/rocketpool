@@ -1,3 +1,7 @@
+## Parcours francais
+
+Un parcours pedagogique en francais qui explique le fonctionnement de Rocket Pool chapitre par chapitre, base sur une lecture commentee du code source de ce depot : voir docs/fr/README.md.
+
 <picture>
   <img alt="Rocket Pool - Decentralised Ethereum Liquid Staking Protocol" src="https://raw.githubusercontent.com/rocket-pool/.github/main/assets/logo.svg" width="auto" height="120">
 </picture>
